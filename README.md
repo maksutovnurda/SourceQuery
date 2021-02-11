@@ -14,4 +14,10 @@ PHP:
 	
 	$server = new SourceQuery('217.70.184.250', 27015);
 	$infos  = $server->getInfos();
-	echo 'There is ' . $infos['players'] . ' player(s) on the server "' .$infos['name'] . '".';
+	echo $infos['players'];
+	// $infos['name'] - Server Name
+	// $infos['players'] - Count of players
+	// $infos['places'] - Slot server
+	// $infos['map'] - Current Map
+	// $infos['ip'] - Ip
+	// $players[$i]['name'] - Nickname of $i(int) player 
